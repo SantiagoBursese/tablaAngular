@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+  registro:any;
   vehiculos:Array<any> = [{nombre:"toyota",patente:"abc123",velocidad:"120", color: "rojo"},
   {nombre: "peugeot",patente:"abd123",velocidad:"85", color: "azul"},
   {nombre: "ford",patente:"bcd123",velocidad:"80", color: "verde"},
@@ -26,6 +27,10 @@ export class TableComponent implements OnInit {
 
   valorMinimo(valorMaximo:number):number{
     return valorMaximo * 0.85;
+  }
+
+  asignar(param:any):any{
+    return this.registro = param;
   }
 
   constructor() { }

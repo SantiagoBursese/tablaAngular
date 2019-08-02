@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ObtenerArregloService {
+  vehiculos:Array<any> = [{nombre:"toyota",patente:"abc123",velocidad:"120", fecha: "2019-05-03", color: "rojo"},
+  {nombre: "peugeot",patente:"abd123",velocidad:"85",fecha: "2019-05-08",  color: "azul"},
+  {nombre: "ford",patente:"bcd123",velocidad:"80",fecha: "2019-05-07",  color: "verde"},
+  {nombre: "ferrari",patente:"ccc222",velocidad:"100",fecha: "2019-05-06",  color: "verde"},
+  {nombre: "fiat",patente:"ddd222",velocidad:"90", fecha: "2019-05-05",  color: "amarillo"}];
+
+  constructor() { }
+
+  getVehiculos():any{
+    return this.vehiculos;
+  }
+
+}

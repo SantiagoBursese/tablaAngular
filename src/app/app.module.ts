@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import {FormsModule} from '@angular/forms';
 import { DetalleComponent } from './detalle/detalle.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { DetalleComponent } from './detalle/detalle.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule
   ],
